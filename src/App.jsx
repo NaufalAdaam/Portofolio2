@@ -3,7 +3,7 @@ import DataImage from './data';
 import { listTools, listProyek } from './data';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div
@@ -60,7 +60,8 @@ function App() {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="#"
+              href="assets/CV-2026-ENGLISH.pdf"
+              download
               className="bg-blue-600 p-4 rounded-2xl hover:bg-blue-500 text-white text-sm transition"
             >
               Download CV
@@ -68,8 +69,8 @@ function App() {
             <a
               href="#proyek"
               className={`p-4 rounded-2xl text-sm transition ${darkMode
-                  ? 'bg-zinc-700 hover:bg-zinc-600'
-                  : 'bg-slate-200 hover:bg-slate-300'
+                ? 'bg-zinc-700 hover:bg-zinc-600'
+                : 'bg-slate-200 hover:bg-slate-300'
                 }`}
             >
               Lihat Project
@@ -121,8 +122,8 @@ function App() {
               <div
                 key={tool.id}
                 className={`flex items-center gap-3 p-4 rounded-md border transition ${darkMode
-                    ? 'border-zinc-700 hover:bg-zinc-800'
-                    : 'border-slate-200 hover:bg-blue-50'
+                  ? 'border-zinc-700 hover:bg-zinc-800'
+                  : 'border-slate-200 hover:bg-blue-50'
                   }`}
               >
                 <img
@@ -168,8 +169,8 @@ function App() {
                   <span
                     key={index}
                     className={`px-3 py-1 text-xs rounded-md border ${darkMode
-                        ? 'bg-zinc-700 border-zinc-600'
-                        : 'bg-blue-50 border-blue-100 text-blue-600'
+                      ? 'bg-zinc-700 border-zinc-600'
+                      : 'bg-blue-50 border-blue-100 text-blue-600'
                       }`}
                   >
                     {tool}
@@ -206,8 +207,8 @@ function App() {
                 name="nama"
                 required
                 className={`w-full mt-2 p-2 rounded-md border ${darkMode
-                    ? 'bg-zinc-700 border-zinc-600'
-                    : 'bg-slate-50 border-slate-200'
+                  ? 'bg-zinc-700 border-zinc-600'
+                  : 'bg-slate-50 border-slate-200'
                   }`}
               />
             </div>
@@ -219,8 +220,8 @@ function App() {
                 name="email"
                 required
                 className={`w-full mt-2 p-2 rounded-md border ${darkMode
-                    ? 'bg-zinc-700 border-zinc-600'
-                    : 'bg-slate-50 border-slate-200'
+                  ? 'bg-zinc-700 border-zinc-600'
+                  : 'bg-slate-50 border-slate-200'
                   }`}
               />
             </div>
@@ -232,8 +233,8 @@ function App() {
                 rows="5"
                 required
                 className={`w-full mt-2 p-2 rounded-md border ${darkMode
-                    ? 'bg-zinc-700 border-zinc-600'
-                    : 'bg-slate-50 border-slate-200'
+                  ? 'bg-zinc-700 border-zinc-600'
+                  : 'bg-slate-50 border-slate-200'
                   }`}
               ></textarea>
             </div>
