@@ -6,7 +6,7 @@ import Navbar from './components/Navbar.jsx'; // ubah dari .tsx ke .jsx
 
 import 'remixicon/fonts/remixicon.css';
 import Footer from './components/Footer.jsx';
-import PreLoader from '../components/Preloader.jsx';
+import PreLoader from './components/Preloader.jsx';
 
 import 'animate.css';
 import AOS from 'aos';
